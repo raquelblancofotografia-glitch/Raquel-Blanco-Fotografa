@@ -10,20 +10,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&family=Lora:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-/* Ajuste específico para esta página */
-.foto-mi {
-  width: 220px;        /* Tamaño pequeño */
-  border-radius: 6px;
-  display: block;
-  margin: 40px auto;   /* Centrada */
-  opacity: 0.9;
+.contenedor-mi {
+  max-width: 1100px;
+  margin: 160px auto 80px auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 0 20px;
 }
+
 .texto-mi {
-  max-width: 750px;
-  margin: 0 auto;
+  flex: 1;
   font-size: 1.2rem;
   line-height: 1.8;
-  text-align: center;
+}
+
+.foto-mi {
+  width: 220px;
+  border-radius: 6px;
+  opacity: 0.9;
 }
 </style>
 
@@ -45,19 +50,29 @@
 
 <h1>Mi historia</h1>
 
-<section class="section">
+<div class="contenedor-mi">
 
   <div class="texto-mi">
     <p>
-      Acompaño a mujeres (y también a hombres) en procesos de transición vital a través de la fotografía emocional.  
-      Mi trabajo nace de la escucha, la calma y la presencia.  
-      No busco la pose perfecta, sino la verdad que aparece cuando dejamos de sostenernos.
+      Siempre he sentido que la fotografía no es un acto técnico, sino un acto de presencia.  
+      Una forma de mirar que sostiene, que acompaña, que permite que algo interno se abra sin prisa.
+    </p>
+
+    <p>
+      Acompaño a mujeres (y también a hombres) en momentos de tránsito, cuando la identidad se mueve,  
+      cuando algo se cae y algo nuevo empieza a asomar.  
+      Mi cámara no busca perfección: busca verdad.  
+    </p>
+
+    <p>
+      Trabajo desde la calma, desde la escucha, desde un espacio íntimo donde puedes aparecer sin máscaras.  
+      Mi misión es ofrecerte un lugar donde puedas verte con dignidad, con suavidad y con profundidad.
     </p>
   </div>
 
-  <img src="yocamara1.jpg" class="foto-mi" alt="Retrato de Raquel Blanco con cámara">
+  <img src="yocamara1.jpg" class="foto-mi" alt="Raquel Blanco con cámara">
 
-</section>
+</div>
 
 </body>
 </html>
