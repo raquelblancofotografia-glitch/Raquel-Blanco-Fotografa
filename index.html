@@ -14,6 +14,12 @@
 <meta name="keywords" content="fotografía emocional, retratos artísticos, mujeres, transición femenina, Madrid, fotografía íntima, Raquel Blanco Robles">
 <meta name="author" content="Raquel Blanco Robles">
 
+<!-- OpenGraph -->
+<meta property="og:title" content="Raquel Blanco Robles | Fotografía Emocional">
+<meta property="og:description" content="Retratos íntimos y fotografía emocional para mujeres en transición.">
+<meta property="og:image" content="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/espalda.jpg">
+<meta property="og:type" content="website">
+
 <style>
 body {
   margin: 0;
@@ -196,66 +202,3 @@ footer {
 
 <!-- GALERÍA -->
 <section class="galeria hidden" id="galeria">
-
-  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/modelolateralbyn.jpg" alt="Retrato artístico en blanco y negro">
-
-  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/pasareladepie.jpg" alt="Retrato de mujer de pie">
-
-  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/tdesdearriba.jpg" alt="Retrato desde arriba">
-
-  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/ojosblancoynegro-3.jpg" alt="Retrato de ojos en blanco y negro">
-
-  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/miradapañuelo.jpg" alt="Retrato con pañuelo">
-
-  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/terrazacosta.jpg" alt="Retrato en terraza">
-
-</section>
-
-<!-- SECCIÓN 2 -->
-<section class="section hidden">
-  <h2>El Umbral</h2>
-  <p>Una experiencia digital para mujeres que sienten que están entre vidas: dejando atrás una versión de sí mismas y abriendo espacio a otra.</p>
-</section>
-
-<!-- TESTIMONIOS -->
-<section class="section hidden">
-  <h2>Testimonios</h2>
-  <p><em>“Pensé que venía a hacerme fotos. Me fui viéndome por primera vez.”</em></p>
-  <p><em>“No fue una sesión, fue un antes y un después.”</em></p>
-</section>
-
-<!-- CONTACTO -->
-<section id="contacto" class="section hidden">
-  <h2>Contacto</h2>
-  <p>Si algo en ti se movió, escríbeme. No hace falta que tengas todo claro.</p>
-
-  <form action="mailto:tuemail@correo.com" method="POST">
-    <input type="text" name="Nombre" placeholder="Nombre" required>
-    <input type="email" name="Email" placeholder="Email" required>
-    <textarea name="Mensaje" rows="5" placeholder="Cuéntame en qué momento estás..." required></textarea>
-    <button type="submit">Enviar mensaje</button>
-  </form>
-</section>
-
-<footer class="hidden">
-  © 2025 Raquel Blanco Robles — Fotografía Emocional y Transición Femenina
-</footer>
-
-<!-- ANIMACIONES -->
-<script>
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('show');
-  });
-});
-document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
-
-window.addEventListener('scroll', () => {
-  const nav = document.querySelector('nav');
-  if (window.scrollY > 50) nav.classList.add('scrolled');
-  else nav.classList.remove('scrolled');
-});
-</script>
-
-</body>
-</html>
