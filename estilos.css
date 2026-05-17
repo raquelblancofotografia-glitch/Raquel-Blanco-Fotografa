@@ -1,4 +1,6 @@
-/* TIPOGRAFÍA Y BASE */
+/* -----------------------------------
+   TIPOGRAFÍA Y BASE
+----------------------------------- */
 body {
   margin: 0;
   font-family: "Lora", serif;
@@ -13,7 +15,19 @@ h1, h2 {
   text-align: center;
 }
 
-/* MENÚ FIJO */
+h1 {
+  margin-top: 140px;
+  font-size: 3rem;
+}
+
+h2 {
+  margin-top: 80px;
+  font-size: 2rem;
+}
+
+/* -----------------------------------
+   MENÚ FIJO
+----------------------------------- */
 nav {
   position: fixed;
   top: 0;
@@ -33,31 +47,32 @@ nav a {
   font-size: 1rem;
 }
 
-nav a:hover { opacity: 0.6; }
+nav a:hover {
+  opacity: 0.6;
+}
 
-/* HERO */
+/* -----------------------------------
+   SECCIONES GENERALES
+----------------------------------- */
+.section {
+  padding: 120px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* -----------------------------------
+   HERO (solo ajustes globales)
+----------------------------------- */
 .hero-img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
 }
 
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  text-align: center;
-}
-
-/* SECCIONES */
-.section {
-  padding: 120px 20px;
-  text-align: center;
-}
-
-/* GALERÍA */
+/* -----------------------------------
+   GALERÍAS
+----------------------------------- */
 .galeria {
   max-width: 1300px;
   margin: 40px auto;
@@ -73,15 +88,134 @@ nav a:hover { opacity: 0.6; }
   object-fit: cover;
 }
 
-/* RESPONSIVE */
+/* -----------------------------------
+   FORMULARIOS (AMPLIOS Y ELEGANTES)
+----------------------------------- */
+form {
+  max-width: 750px;
+  margin: 40px auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 22px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+button {
+  padding: 16px 45px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #333;
+}
+
+/* -----------------------------------
+   SOBRE MÍ (AJUSTES ESPECÍFICOS)
+----------------------------------- */
+.contenedor-mi {
+  max-width: 1100px;
+  margin: 160px auto 80px auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.texto-mi {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.foto-mi {
+  width: 220px;
+  border-radius: 6px;
+  opacity: 0.9;
+}
+
+/* -----------------------------------
+   EL UMBRAL (AJUSTES ESPECÍFICOS)
+----------------------------------- */
+.umbral-img {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  background-color: #000;
+  margin-top: 120px;
+}
+
+.texto-umbral {
+  max-width: 900px;
+  margin: 60px auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* -----------------------------------
+   LÁMINAS
+----------------------------------- */
+.lista-laminas {
+  max-width: 900px;
+  margin: 160px auto 40px auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.lista-laminas li {
+  margin-bottom: 20px;
+}
+
+.form-envio {
+  max-width: 750px;
+  margin: 60px auto;
+}
+
+/* -----------------------------------
+   RESPONSIVE
+----------------------------------- */
 @media (max-width: 900px) {
   .galeria {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contenedor-mi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .foto-mi {
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 600px) {
   .galeria {
     grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
   }
 }
