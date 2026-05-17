@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Raquel Blanco Robles | Fotografía Emocional</title>
+<title>Raquel Blanco Fotografía Emocional</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&family=Lora:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&family=Lora:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
   font-family: "Lora", serif;
-  color: #111;
   background: #fff;
+  color: #111;
   line-height: 1.7;
 }
 
@@ -22,7 +22,7 @@ h1, h2 {
   font-weight: 300;
 }
 
-/* MENÚ */
+/* MENÚ FIJO */
 nav {
   position: fixed;
   top: 0;
@@ -73,4 +73,128 @@ header {
   font-size: 1.3rem;
 }
 
-/* SECCIONES
+/* SECCIONES */
+.section {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+/* GALERÍA */
+.galeria {
+  padding: 80px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* CONTACTO */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+}
+
+button {
+  padding: 14px 40px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover { background: #333; }
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fafafa;
+  opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Raquel Blanco Robles</div>
+  <div>
+    <a href="index.html">Inicio</a>
+    <a href="sobre-mi.html">Mi historia</a>
+    <a href="portfolio.html">Galería</a>
+    <a href="laminas.html">Láminas</a>
+    <a href="el-umbral.html">El Umbral</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
+
+<header>
+  <img src="espalda.jpg" class="hero-img" alt="">
+  <div class="hero-text">
+    <h1>Fotografía emocional para mujeres en transición</h1>
+    <p>Un espacio íntimo, elegante y verdadero para verte con dignidad y calma.</p>
+  </div>
+</header>
+
+<section class="section">
+  <h2>Fotografía Transformadora</h2>
+  <p>Sesiones íntimas, profundas y minimalistas donde no vienes a posar: vienes a aparecer.</p>
+</section>
+
+<section class="galeria">
+  <img src="modelolateralbyn.jpg">
+  <img src="pasareladepie.jpg">
+  <img src="tdesdearriba.jpg">
+  <img src="ojosblancoynegro-3.jpg">
+  <img src="miradapañuelo.jpg">
+  <img src="terrazacosta.jpg">
+</section>
+
+<section class="section">
+  <h2>El Umbral</h2>
+  <p>Una experiencia digital para mujeres que sienten que están entre vidas.</p>
+</section>
+
+<section class="section">
+  <h2>Testimonios</h2>
+  <p><em>“Pensé que venía a hacerme fotos. Me fui viéndome por primera vez.”</em></p>
+  <p><em>“No fue una sesión, fue un antes y un después.”</em></p>
+</section>
+
+<section id="contacto" class="section">
+  <h2>Contacto</h2>
+  <p>Si algo en ti se movió, escríbeme. No hace falta que tengas todo claro.</p>
+
+  <form action="https://formsubmit.co/raquelblancofotografia@gmail.com" method="POST">
+
+    <input type="text" name="Nombre" placeholder="Nombre" required>
+    <input type="email" name="Email" placeholder="Email" required>
+    <textarea name="Mensaje" rows="5" placeholder="Cuéntame en qué momento estás..." required></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://raquelblancofotografia.es/gracias.html">
+
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Raquel Blanco Robles — Fotografía Emocional
+</footer>
+
+</body>
+</html>
