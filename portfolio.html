@@ -4,50 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Galería | Fotografía Emocional — Raquel Blanco Robles</title>
+<title>Galería | Raquel Blanco Fotografía</title>
 
-<!-- SEO -->
-<meta name="description" content="Galería de fotografía emocional y retratos artísticos realizados por Raquel Blanco Robles. Imágenes íntimas, elegantes y profundas.">
-<meta name="keywords" content="galería, fotografía emocional, retratos artísticos, mujeres, transición femenina, Madrid, Raquel Blanco Robles">
-<meta name="author" content="Raquel Blanco Robles">
-
-<!-- OpenGraph -->
-<meta property="og:title" content="Galería | Fotografía Emocional">
-<meta property="og:description" content="Retratos íntimos y fotografía emocional por Raquel Blanco Robles.">
-<meta property="og:image" content="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/modelolateralbyn.jpg">
-<meta property="og:type" content="website">
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&family=Lora:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&family=Lora:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
   font-family: "Lora", serif;
+  background: #fff;
   color: #111;
-  background:#fff;
-  line-height: 1.7;
 }
 
-h1 {
-  font-family: "Playfair Display";
-  font-weight: 300;
-  text-align:center;
-  margin-top:140px;
-  font-size:3.5rem;
-}
-
-/* MENÚ */
+/* MENÚ FIJO */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255,255,255,0.9);
-  backdrop-filter: blur(6px);
+  background: #fff;
   padding: 18px 40px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #eee;
-  z-index:1000;
+  z-index: 1000;
 }
 
 nav a {
@@ -55,50 +34,67 @@ nav a {
   text-decoration: none;
   color: #111;
   font-size: 1rem;
-  letter-spacing: 1px;
 }
 
-nav a:hover { opacity:0.6; }
+nav a:hover { opacity: 0.6; }
 
-/* GALERÍA EN DOS COLUMNAS */
+h1, h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+}
+
+h1 {
+  margin-top: 140px;
+  font-size: 3rem;
+}
+
+h2 {
+  margin-top: 80px;
+  font-size: 2rem;
+}
+
+/* GALERÍA */
 .galeria {
-  padding: 120px 20px;
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  max-width: 1400px;
-  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
 .galeria img {
   width: 100%;
   border-radius: 4px;
-  transition: opacity 0.4s ease;
+  object-fit: cover;
 }
 
-.galeria img:hover {
-  opacity: 0.9;
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 60px 20px;
-  background-color: #fafafa;
-  opacity: 0.7;
-  margin-top: 80px;
+@media (max-width: 600px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 </head>
 
 <body>
 
+<!-- MENÚ -->
 <nav>
   <div class="logo">Raquel Blanco Robles</div>
   <div>
     <a href="index.html">Inicio</a>
     <a href="sobre-mi.html">Mi historia</a>
     <a href="portfolio.html">Galería</a>
+    <a href="laminas.html">Láminas</a>
     <a href="el-umbral.html">El Umbral</a>
     <a href="index.html#contacto">Contacto</a>
   </div>
@@ -106,25 +102,46 @@ footer {
 
 <h1>Galería</h1>
 
-<section class="galeria">
+<!-- RETRATOS -->
+<h2>Retratos</h2>
+<div class="galeria">
+  <img src="modelolateralbyn.jpg">
+  <img src="pasareladepie.jpg">
+  <img src="ojosblancoynegro-3.jpg">
+  <img src="miradapañuelo.jpg">
+  <img src="tdesdearriba.jpg">
+  <img src="terrazacosta.jpg">
 
-  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/modelolateralbyn.jpg" alt="Retrato artístico en blanco y negro">
+  <!-- Aquí añado las fotos nuevas que subiste -->
+  <img src="foto1.jpg">
+  <img src="foto2.jpg">
+  <img src="foto3.jpg">
+  <img src="foto4.jpg">
+  <img src="foto5.jpg">
+  <img src="foto6.jpg">
+</div>
 
-  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/pasareladepie.jpg" alt="Retrato de mujer de pie">
+<!-- PAISAJE -->
+<h2>Paisaje</h2>
+<div class="galeria">
+  <img src="paisaje1.jpg">
+  <img src="paisaje2.jpg">
+  <img src="paisaje3.jpg">
+  <img src="paisaje4.jpg">
+  <img src="paisaje5.jpg">
+  <img src="paisaje6.jpg">
+</div>
 
-  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/tdesdearriba.jpg" alt="Retrato desde arriba">
-
-  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/ojosblancoynegro-3.jpg" alt="Retrato de ojos en blanco y negro">
-
-  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/miradapañuelo.jpg" alt="Retrato con pañuelo">
-
-  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/terrazacosta.jpg" alt="Retrato en terraza">
-
-</section>
-
-<footer>
-  © 2025 Raquel Blanco Robles — Fotografía Emocional y Transición Femenina
-</footer>
+<!-- PRODUCTO -->
+<h2>Producto</h2>
+<div class="galeria">
+  <img src="producto1.jpg">
+  <img src="producto2.jpg">
+  <img src="producto3.jpg">
+  <img src="producto4.jpg">
+  <img src="producto5.jpg">
+  <img src="producto6.jpg">
+</div>
 
 </body>
 </html>
