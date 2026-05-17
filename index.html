@@ -8,7 +8,48 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&family=Lora:wght@300;400&display=swap" rel="stylesheet">
 
+<!-- CSS externo -->
 <link rel="stylesheet" href="estilos.css">
+
+<style>
+/* Ajustes específicos del index */
+.hero {
+  position: relative;
+  margin-top: 80px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+/* Contacto específico */
+#contacto form {
+  max-width: 600px;
+  margin: 40px auto 0 auto;
+}
+</style>
 
 </head>
 
@@ -62,7 +103,9 @@
     Una experiencia para quienes sienten que están entre vidas.  
     Un rito suave, un tránsito, una apertura.
   </p>
-  <a href="el-umbral.html" class="link">Descubrir El Umbral →</a>
+  <a href="el-umbral.html" class="link" style="text-decoration:none; color:#000; font-weight:bold;">
+    Descubrir El Umbral →
+  </a>
 </section>
 
 <!-- TESTIMONIOS -->
@@ -73,11 +116,11 @@
 </section>
 
 <!-- CONTACTO -->
-<section id="contacto" class="section" style="padding-top:180px;">
+<section id="contacto" class="section" style="padding-top:200px;">
   <h2>Contacto</h2>
   <p>Si algo en ti se movió, escríbeme. No hace falta que tengas todo claro.</p>
 
-  <form action="https://formsubmit.co/raquelblancofotografia@gmail.com" method="POST" style="margin-top:40px;">
+  <form action="https://formsubmit.co/raquelblancofotografia@gmail.com" method="POST">
 
     <input type="text" name="Nombre" placeholder="Nombre" required>
     <input type="email" name="Email" placeholder="Email" required>
@@ -96,3 +139,4 @@
 
 </body>
 </html>
+
