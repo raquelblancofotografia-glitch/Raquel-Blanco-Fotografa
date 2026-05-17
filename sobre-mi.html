@@ -6,93 +6,13 @@
 
 <title>Mi historia | Raquel Blanco Fotografía</title>
 
+<link rel="stylesheet" href="estilos.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&family=Lora:wght@300;400&display=swap" rel="stylesheet">
 
-<style>
-body {
-  margin: 0;
-  font-family: "Lora", serif;
-  background: #fff;
-  color: #111;
-  line-height: 1.7;
-}
-
-/* MENÚ FIJO */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #fff;
-  padding: 18px 40px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #eee;
-  z-index: 1000;
-}
-
-nav a {
-  margin-left: 30px;
-  text-decoration: none;
-  color: #111;
-  font-size: 1rem;
-}
-
-nav a:hover { opacity: 0.6; }
-
-h1 {
-  margin-top: 140px;
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  font-weight: 300;
-  font-size: 3rem;
-}
-
-/* CONTENEDOR FOTO + TEXTO */
-.contenedor {
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 20px;
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-}
-
-.foto {
-  width: 300px;
-  border-radius: 6px;
-  flex-shrink: 0;
-}
-
-.texto {
-  flex: 1;
-  font-size: 1.25rem;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .contenedor {
-    flex-direction: column;
-    text-align: center;
-  }
-  .foto {
-    margin: 0 auto;
-    width: 70%;
-  }
-}
-
-footer {
-  text-align: center;
-  padding: 60px 20px;
-  background: #fafafa;
-  opacity: 0.7;
-  margin-top: 80px;
-}
-</style>
 </head>
 
 <body>
 
-<!-- MENÚ -->
 <nav>
   <div class="logo">Raquel Blanco Robles</div>
   <div>
@@ -107,31 +27,15 @@ footer {
 
 <h1>Mi historia</h1>
 
-<div class="contenedor">
-  <img src="yocamara1.jpg" class="foto" alt="Retrato de Raquel Blanco con cámara">
+<section class="section">
+  <p>
+    Acompaño a mujeres (y también a hombres) en procesos de transición vital a través de la fotografía emocional.  
+    Mi trabajo nace de la escucha, la calma y la presencia.  
+    No busco la pose perfecta, sino la verdad que aparece cuando dejamos de sostenernos.
+  </p>
 
-  <div class="texto">
-    <p>
-      Soy <strong>Raquel Blanco Robles</strong>, fotógrafa emocional especializada en acompañar a mujeres —y también a hombres— que atraviesan procesos de transición interna.
-    </p>
-
-    <p>
-      Mi fotografía nace del silencio, de la escucha y de la necesidad de crear imágenes que sostienen. No fotografío poses: fotografío lo que aparece cuando dejamos de sostenernos.
-    </p>
-
-    <p>
-      Trabajo desde la presencia y la calma. Cada sesión es un espacio íntimo donde puedes verte sin exigencias, sin máscaras, sin la necesidad de ser otra persona.
-    </p>
-
-    <p>
-      Llegué a la fotografía buscando comprender mis propios cambios. Hoy acompaño a otras personas en ese mismo tránsito: el de reconocerse, sostenerse y abrir espacio a lo que viene.
-    </p>
-  </div>
-</div>
-
-<footer>
-  © 2025 Raquel Blanco Robles — Fotografía Emocional
-</footer>
+  <img src="yo.jpg" class="foto-mi" alt="Retrato de Raquel Blanco">
+</section>
 
 </body>
 </html>
