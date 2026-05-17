@@ -4,30 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mi historia | Raquel Blanco Robles</title>
+<title>Mi historia | Raquel Blanco Fotografía</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&family=Lora:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&family=Lora:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
   font-family: "Lora", serif;
-  color: #111;
   background: #fff;
+  color: #111;
   line-height: 1.7;
 }
 
-h1, h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: 300;
-}
-
-h1 {
-  margin-top: 140px;
-  text-align: center;
-  font-size: 3rem;
-}
-
+/* MENÚ FIJO */
 nav {
   position: fixed;
   top: 0;
@@ -44,21 +34,50 @@ nav a {
   margin-left: 30px;
   text-decoration: none;
   color: #111;
+  font-size: 1rem;
+}
+
+nav a:hover { opacity: 0.6; }
+
+h1 {
+  margin-top: 140px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+/* CONTENEDOR FOTO + TEXTO */
+.contenedor {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
 }
 
 .foto {
-  width: 90%;
-  max-width: 700px;
-  display: block;
-  margin: 60px auto;
-  border-radius: 4px;
+  width: 300px;
+  border-radius: 6px;
+  flex-shrink: 0;
 }
 
-p {
-  max-width: 800px;
-  margin: 0 auto 20px auto;
+.texto {
+  flex: 1;
   font-size: 1.25rem;
-  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+  .foto {
+    margin: 0 auto;
+    width: 70%;
+  }
 }
 
 footer {
@@ -66,18 +85,21 @@ footer {
   padding: 60px 20px;
   background: #fafafa;
   opacity: 0.7;
+  margin-top: 80px;
 }
 </style>
 </head>
 
 <body>
 
+<!-- MENÚ -->
 <nav>
   <div class="logo">Raquel Blanco Robles</div>
   <div>
     <a href="index.html">Inicio</a>
     <a href="sobre-mi.html">Mi historia</a>
     <a href="portfolio.html">Galería</a>
+    <a href="laminas.html">Láminas</a>
     <a href="el-umbral.html">El Umbral</a>
     <a href="index.html#contacto">Contacto</a>
   </div>
@@ -85,26 +107,30 @@ footer {
 
 <h1>Mi historia</h1>
 
-<img src="yo.jpg" class="foto" alt="Retrato de Raquel Blanco Robles">
+<div class="contenedor">
+  <img src="yocamara1.jpg" class="foto" alt="Retrato de Raquel Blanco con cámara">
 
-<p>
-Soy <strong>Raquel Blanco Robles</strong>, fotógrafa emocional especializada en acompañar a mujeres que atraviesan procesos de transición interna.
-</p>
+  <div class="texto">
+    <p>
+      Soy <strong>Raquel Blanco Robles</strong>, fotógrafa emocional especializada en acompañar a mujeres —y también a hombres— que atraviesan procesos de transición interna.
+    </p>
 
-<p>
-No fotografío poses. Fotografío lo que aparece cuando dejamos de sostenernos. La cámara es un espejo honesto, no un juicio.
-</p>
+    <p>
+      Mi fotografía nace del silencio, de la escucha y de la necesidad de crear imágenes que sostienen. No fotografío poses: fotografío lo que aparece cuando dejamos de sostenernos.
+    </p>
 
-<p>
-Trabajo desde la presencia y la calma. Cada sesión es un ritual suave donde puedes verte sin exigencias, sin máscaras, sin la necesidad de ser otra.
-</p>
+    <p>
+      Trabajo desde la presencia y la calma. Cada sesión es un espacio íntimo donde puedes verte sin exigencias, sin máscaras, sin la necesidad de ser otra persona.
+    </p>
 
-<p>
-Llegué a la fotografía buscando comprender mis propios cambios. Hoy acompaño a otras mujeres en ese mismo tránsito: el de reconocerse, sostenerse y abrir espacio a lo que viene.
-</p>
+    <p>
+      Llegué a la fotografía buscando comprender mis propios cambios. Hoy acompaño a otras personas en ese mismo tránsito: el de reconocerse, sostenerse y abrir espacio a lo que viene.
+    </p>
+  </div>
+</div>
 
 <footer>
-  © 2025 Raquel Blanco Robles — Fotografía Emocional y Transición Femenina
+  © 2025 Raquel Blanco Robles — Fotografía Emocional
 </footer>
 
 </body>
