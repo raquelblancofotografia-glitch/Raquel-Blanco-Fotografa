@@ -43,12 +43,6 @@
   font-size: 1.3rem;
   margin-top: 10px;
 }
-
-/* Contacto específico */
-#contacto form {
-  max-width: 600px;
-  margin: 40px auto 0 auto;
-}
 </style>
 
 </head>
@@ -120,16 +114,18 @@
   <h2>Contacto</h2>
   <p>Si algo en ti se movió, escríbeme. No hace falta que tengas todo claro.</p>
 
-  <form action="https://formsubmit.co/raquelblancofotografia@gmail.com" method="POST">
+  <form action="https://formsubmit.co/raquelblancofotografia@gmail.com" method="POST" style="max-width:750px; margin:40px auto;">
 
-    <input type="text" name="Nombre" placeholder="Nombre" required>
-    <input type="email" name="Email" placeholder="Email" required>
-    <textarea name="Mensaje" rows="5" placeholder="Cuéntame en qué momento estás..." required></textarea>
+    <input type="text" name="Nombre" placeholder="Nombre" required style="width:100%; padding:18px; margin-bottom:22px;">
+    <input type="email" name="Email" placeholder="Email" required style="width:100%; padding:18px; margin-bottom:22px;">
+    <textarea name="Mensaje" rows="6" placeholder="Cuéntame en qué momento estás..." required style="width:100%; padding:18px; margin-bottom:22px;"></textarea>
 
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://raquelblancofotografia.es/gracias.html">
 
-    <button type="submit">Enviar mensaje</button>
+    <button type="submit" style="padding:16px 45px; background:#000; color:#fff; border:none; cursor:pointer; font-size:1rem;">
+      Enviar mensaje
+    </button>
   </form>
 </section>
 
@@ -139,4 +135,3 @@
 
 </body>
 </html>
-
