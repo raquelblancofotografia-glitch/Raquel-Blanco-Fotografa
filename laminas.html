@@ -9,6 +9,22 @@
 <link rel="stylesheet" href="estilos.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&family=Lora:wght@300;400&display=swap" rel="stylesheet">
 
+<style>
+.lista-laminas {
+  max-width: 900px;
+  margin: 160px auto 40px auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+.lista-laminas li {
+  margin-bottom: 20px;
+}
+.form-envio {
+  max-width: 600px;
+  margin: 60px auto;
+}
+</style>
+
 </head>
 
 <body>
@@ -27,11 +43,30 @@
 
 <h1>Láminas</h1>
 
+<ol class="lista-laminas">
+  <li><strong>Pescadores</strong> — Fotografía marina en blanco y negro.</li>
+  <li><strong>Faro</strong> — Luz, horizonte y dirección.</li>
+  <li><strong>Nudo</strong> — Fuerza, unión y memoria.</li>
+</ol>
+
 <div class="galeria">
   <img src="pescadores.jpg">
   <img src="faro.jpg">
   <img src="nudo.jpg">
 </div>
+
+<h2 style="margin-top:80px;">Solicitar información</h2>
+
+<form class="form-envio" action="https://formsubmit.co/raquelblancofotografia@gmail.com" method="POST">
+  <input type="text" name="Nombre" placeholder="Nombre" required>
+  <input type="email" name="Email" placeholder="Email" required>
+  <textarea name="Mensaje" rows="5" placeholder="Indica qué lámina te interesa y tu localidad para calcular envío." required></textarea>
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://raquelblancofotografia.es/gracias.html">
+
+  <button type="submit">Solicitar información</button>
+</form>
 
 </body>
 </html>
