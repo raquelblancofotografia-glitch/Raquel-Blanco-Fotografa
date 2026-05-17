@@ -4,20 +4,46 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gracias | Raquel Blanco Robles</title>
+<title>Gracias | Raquel Blanco Fotografía</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&family=Lora:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&family=Lora:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
   font-family: "Lora", serif;
+  background: #fff;
+  color: #111;
   text-align: center;
-  padding: 120px 20px;
+  line-height: 1.7;
 }
 
+/* MENÚ FIJO */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #111;
+  font-size: 1rem;
+}
+
+nav a:hover { opacity: 0.6; }
+
 h1 {
+  margin-top: 160px;
   font-family: "Playfair Display", serif;
+  font-weight: 300;
   font-size: 3rem;
 }
 
@@ -27,34 +53,45 @@ p {
   margin: 20px auto;
 }
 
-a {
+a.boton {
   display: inline-block;
   margin-top: 40px;
   padding: 14px 40px;
   background: #000;
   color: #fff;
   text-decoration: none;
+  font-size: 1rem;
 }
 
-a:hover { background: #333; }
-
-footer {
-  margin-top: 120px;
-  opacity: 0.6;
+a.boton:hover {
+  background: #333;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Gracias por tu mensaje</h1>
-<p>En breve me pondré en contacto contigo.</p>
+<!-- MENÚ -->
+<nav>
+  <div class="logo">Raquel Blanco Robles</div>
+  <div>
+    <a href="index.html">Inicio</a>
+    <a href="sobre-mi.html">Mi historia</a>
+    <a href="portfolio.html">Galería</a>
+    <a href="laminas.html">Láminas</a>
+    <a href="el-umbral.html">El Umbral</a>
+    <a href="index.html#contacto">Contacto</a>
+  </div>
+</nav>
 
-<a href="index.html">Volver al inicio</a>
+<h1>Gracias</h1>
 
-<footer>
-  © 2025 Raquel Blanco Robles — Fotografía Emocional
-</footer>
+<p>
+Tu mensaje ha sido enviado correctamente.  
+En breve me pondré en contacto contigo.
+</p>
+
+<a href="index.html" class="boton">Volver al inicio</a>
 
 </body>
 </html>
