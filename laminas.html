@@ -6,112 +6,13 @@
 
 <title>Láminas | Raquel Blanco Fotografía</title>
 
+<link rel="stylesheet" href="estilos.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&family=Lora:wght@300;400&display=swap" rel="stylesheet">
 
-<style>
-body {
-  margin: 0;
-  font-family: "Lora", serif;
-  background: #fff;
-  color: #111;
-  line-height: 1.7;
-}
-
-/* MENÚ FIJO */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #fff;
-  padding: 18px 40px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #eee;
-  z-index: 1000;
-}
-
-nav a {
-  margin-left: 30px;
-  text-decoration: none;
-  color: #111;
-  font-size: 1rem;
-}
-
-nav a:hover { opacity: 0.6; }
-
-h1 {
-  margin-top: 140px;
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  font-weight: 300;
-  font-size: 3rem;
-}
-
-/* GALERÍA DE LÁMINAS */
-.laminas {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.laminas img {
-  width: 100%;
-  border-radius: 4px;
-  object-fit: cover;
-}
-
-.precio {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 1.2rem;
-}
-
-/* FORMULARIO */
-form {
-  max-width: 600px;
-  margin: 80px auto;
-  padding: 20px;
-}
-
-input, textarea, select {
-  width: 100%;
-  padding: 16px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  background: #fafafa;
-}
-
-button {
-  padding: 14px 40px;
-  background: #000;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover { background: #333; }
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .laminas {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .laminas {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
 </head>
 
 <body>
 
-<!-- MENÚ -->
 <nav>
   <div class="logo">Raquel Blanco Robles</div>
   <div>
@@ -126,51 +27,11 @@ button:hover { background: #333; }
 
 <h1>Láminas</h1>
 
-<!-- GALERÍA DE LÁMINAS -->
-<div class="laminas">
-
-  <div>
-    <img src="lamina1.jpg" alt="">
-    <p class="precio">30€ — Tamaño A4</p>
-  </div>
-
-  <div>
-    <img src="lamina2.jpg" alt="">
-    <p class="precio">30€ — Tamaño A4</p>
-  </div>
-
-  <div>
-    <img src="lamina3.jpg" alt="">
-    <p class="precio">30€ — Tamaño A4</p>
-  </div>
-
+<div class="galeria">
+  <img src="pescadores.jpg">
+  <img src="faro.jpg">
+  <img src="nudo.jpg">
 </div>
-
-<!-- FORMULARIO DE PEDIDO -->
-<h2 style="text-align:center; font-family:'Playfair Display', serif; font-weight:300; margin-top:80px;">
-  Realizar pedido
-</h2>
-
-<form action="https://formsubmit.co/raquelblancofotografia@gmail.com" method="POST">
-
-  <input type="text" name="Nombre" placeholder="Nombre" required>
-
-  <input type="email" name="Email" placeholder="Email" required>
-
-  <select name="Lámina elegida" required>
-    <option value="">Selecciona la lámina</option>
-    <option value="Lámina 1">Lámina 1</option>
-    <option value="Lámina 2">Lámina 2</option>
-    <option value="Lámina 3">Lámina 3</option>
-  </select>
-
-  <textarea name="Dirección de envío" rows="4" placeholder="Dirección completa de envío" required></textarea>
-
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://raquelblancofotografia.es/gracias.html">
-
-  <button type="submit">Enviar pedido</button>
-</form>
 
 </body>
 </html>
