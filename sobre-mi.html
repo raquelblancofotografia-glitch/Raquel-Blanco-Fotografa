@@ -10,11 +10,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&family=Lora:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-/* FOTO CABECERA */
+/* CONTENEDOR NEGRO PARA LA FOTO */
+.mi-cabecera {
+  width: 100%;
+  background-color: #000;   /* Fondo negro elegante */
+  padding-top: 120px;       /* Evita que el menú tape la foto */
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* FOTO AJUSTADA COMO EN EL UMBRAL */
 .mi-img {
   width: 100%;
+  max-width: 900px;         /* Reduce tamaño como El Umbral */
   height: auto;
-  margin-top: 120px;   /* evita que el menú la tape */
+  object-fit: contain;
   display: block;
 }
 
@@ -46,8 +57,10 @@
   </div>
 </nav>
 
-<!-- FOTO CABECERA GRANDE -->
-<img src="yocamara1.jpg" class="mi-img" alt="Raquel Blanco con cámara">
+<!-- FOTO CABECERA SOBRE FONDO NEGRO -->
+<div class="mi-cabecera">
+  <img src="yocamara1.jpg" class="mi-img" alt="Raquel Blanco con cámara">
+</div>
 
 <!-- TEXTO DEBAJO -->
 <div class="texto-mi">
