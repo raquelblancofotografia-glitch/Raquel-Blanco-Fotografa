@@ -57,4 +57,162 @@ nav a {
 
 nav a:hover { opacity: 0.6; }
 
-/* ----------------
+/* ------------------ HERO ------------------ */
+header {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  margin-top: 80px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center 30%;
+  filter: brightness(60%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+}
+
+.hero-text p {
+  font-size: 1.4rem;
+  color: #f2f2f2;
+}
+
+/* ------------------ SECCIONES ------------------ */
+.section {
+  padding: 140px 20px;
+  text-align: center;
+}
+
+/* ------------------ GALERÍA EN DOS COLUMNAS ------------------ */
+.galeria {
+  padding: 120px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 4px;
+  transition: opacity 0.4s ease;
+}
+
+.galeria img:hover {
+  opacity: 0.9;
+}
+
+/* ------------------ CONTACTO ------------------ */
+#contacto {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+}
+
+button {
+  padding: 14px 40px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover { background-color: #333; }
+
+/* ------------------ FOOTER ------------------ */
+footer {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fafafa;
+  opacity: 0.7;
+}
+
+/* ------------------ ANIMACIONES ------------------ */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENÚ -->
+<nav>
+  <div class="logo">Raquel Blanco Robles</div>
+  <div>
+    <a href="index.html">Inicio</a>
+    <a href="sobre-mi.html">Mi historia</a>
+    <a href="portfolio.html">Galería</a>
+    <a href="el-umbral.html">El Umbral</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="inicio" class="hidden">
+  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/espalda.jpg" class="hero-img">
+  <div class="hero-text">
+    <h1>Fotografía emocional para mujeres en transición</h1>
+    <p>Un espacio íntimo, elegante y verdadero para verte con dignidad y calma.</p>
+  </div>
+</header>
+
+<!-- SECCIÓN 1 -->
+<section class="section hidden">
+  <h2>Fotografía Transformadora</h2>
+  <p>Sesiones íntimas, profundas y minimalistas donde no vienes a posar: vienes a aparecer.</p>
+</section>
+
+<!-- GALERÍA EN DOS COLUMNAS -->
+<section class="galeria hidden" id="galeria">
+
+  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/modelolateralbyn.jpg" alt="Modelo lateral blanco y negro" class="hidden">
+
+  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/pasareladepie.jpg" alt="Pasarela de pie" class="hidden">
+
+  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/tdesdearriba.jpg" alt="Toma desde arriba" class="hidden">
+
+  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/ojosblancoynegro-3.jpg" alt="Ojos blanco y negro" class="hidden">
+
+  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/miradapañuelo.jpg" alt="Mirada con pañuelo" class="hidden">
+
+  <img src="https://raw.githubusercontent.com/raquelblancofotografia-glitch/Raquel-Blanco-Fotografa/main/terrazacosta.jpg" alt="Terraza costa" class="hidden">
+
+</section>
+
+<!-- SECCIÓN 2 -->
+<section class="section hidden">
+  <h2>El Umbral</h2>
+  <p>Una experiencia digital para mujeres que sienten que están entre vidas: dejando atrás una versión de sí mismas
