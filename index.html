@@ -155,3 +155,82 @@ footer {
   padding: 60px 20px;
   background-color: #fafafa;
   opacity: 0.7;
+}
+
+/* ANIMACIONES */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENÚ -->
+<nav>
+  <div class="logo">Raquel Blanco Robles</div>
+  <div>
+    <a href="index.html">Inicio</a>
+    <a href="sobre-mi.html">Mi historia</a>
+    <a href="portfolio.html">Galería</a>
+    <a href="el-umbral.html">El Umbral</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="inicio" class="hidden">
+  <img src="espalda.jpg" class="hero-img" alt="Fotografía artística de espalda">
+  <div class="hero-text">
+    <h1>Fotografía emocional para mujeres en transición</h1>
+    <p>Un espacio íntimo, elegante y verdadero para verte con dignidad y calma.</p>
+  </div>
+</header>
+
+<!-- SECCIÓN 1 -->
+<section class="section hidden">
+  <h2>Fotografía Transformadora</h2>
+  <p>Sesiones íntimas, profundas y minimalistas donde no vienes a posar: vienes a aparecer.</p>
+</section>
+
+<!-- GALERÍA -->
+<section class="galeria hidden" id="galeria">
+
+  <img src="modelolateralbyn.jpg" alt="Retrato artístico en blanco y negro">
+
+  <img src="pasareladepie.jpg" alt="Retrato de mujer de pie">
+
+  <img src="tdesdearriba.jpg" alt="Retrato desde arriba">
+
+  <img src="ojosblancoynegro-3.jpg" alt="Retrato de ojos en blanco y negro">
+
+  <img src="miradapañuelo.jpg" alt="Retrato con pañuelo">
+
+  <img src="terrazacosta.jpg" alt="Retrato en terraza">
+
+</section>
+
+<!-- SECCIÓN 2 -->
+<section class="section hidden">
+  <h2>El Umbral</h2>
+  <p>Una experiencia digital para mujeres que sienten que están entre vidas: dejando atrás una versión de sí mismas y abriendo espacio a otra.</p>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="section hidden">
+  <h2>Testimonios</h2>
+  <p><em>“Pensé que venía a hacerme fotos. Me fui viéndome por primera vez.”</em></p>
+  <p><em>“No fue una sesión, fue un antes y un después.”</em></p>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section hidden">
+  <h2>Contacto</h2>
+  <p>Si algo en ti se movió, escríbeme. No hace falta que tengas todo
